@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_payments"
+        android:icon="@drawable/ic_list"
+        android:title="@string/title_payments" />
+
+    <item
+        android:id="@+id/nav_pay"
+        android:icon="@drawable/ic_fingerprint"
+        android:title="@string/title_pay" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/title_settings"
+        app:showAsAction="never"/>
+
+</menu>

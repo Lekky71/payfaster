@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.FeedbackFragment"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/feebackTextView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Payment Successful"
+        android:textColor="@color/colorDarkGrey"
+        android:gravity="center"
+        android:layout_marginBottom="70dp"
+        android:textSize="23sp"/>
+
+    <ImageView
+        android:id="@+id/feedbackImageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/ic_success"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/tryAgainButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_black_line"
+        android:text="Try Again"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Inverse"
+        android:visibility="gone"/>
+
+</LinearLayout>

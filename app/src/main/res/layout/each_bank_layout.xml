@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="15dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bankCardView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/colorStanbic"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/bankNameTextView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                tools:text="Stanbic Bank"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:paddingStart="40sp"
+                android:paddingEnd="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/amountTextView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                tools:text="NGN 5000"
+                android:textSize="19sp"
+                android:textColor="@color/colorGreen"
+                android:paddingStart="40sp"
+                android:paddingEnd="40dp"
+                app:srcCompat="@drawable/ic_stanbic"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/paymentCardView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="-30dp"
+        android:elevation="10dp"
+        android:layout_below="@id/bankCardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Details"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Oluwaleke Fakorede"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="9sp"
+
+                android:drawableStart="@drawable/ic_bullet_point"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/accountNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   0423679273"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="9sp"
+
+                android:drawableStart="@drawable/ic_bullet_point"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

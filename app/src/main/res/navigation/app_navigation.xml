@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.hashcode.payfastfast.fragments.WelcomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome" />
+
+    <fragment
+        android:id="@+id/payFragment"
+        android:name="com.hashcode.payfastfast.fragments.PayFragment"
+        android:label="Pay"
+        tools:layout="@layout/fragment_pay" />
+
+    <fragment
+        android:id="@+id/paymentsFragment"
+        android:name="com.hashcode.payfastfast.fragments.PaymentsFragment"
+        android:label="Payments"
+        tools:layout="@layout/fragment_payments" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.hashcode.payfastfast.fragments.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/banksFragment"
+        android:name="com.hashcode.payfastfast.fragments.BanksFragment"
+        android:label="Banks"
+        tools:layout="@layout/fragment_banks" />
+
+    <fragment
+        android:id="@+id/feedbackFragment"
+        android:name="com.hashcode.payfastfast.fragments.FeedbackFragment"
+        android:label="Feedback"
+        tools:layout="@layout/fragment_feedback" />
+
+
+</navigation>
