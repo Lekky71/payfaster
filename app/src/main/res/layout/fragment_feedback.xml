@@ -10,7 +10,7 @@
     android:layout_gravity="center">
 
     <TextView
-        android:id="@+id/feebackTextView"
+        android:id="@+id/feedbackTextView"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:text="Payment Successful"

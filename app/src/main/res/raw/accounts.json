@@ -1,0 +1,79 @@
+[
+  {
+    "id": 11,
+    "name": "Francesco Terry",
+    "accountNumber": "8978936095",
+    "bankName": "Guaranty Trust Bank",
+    "bvn": "50147768596",
+    "fingerPrint": "50147768596",
+    "imageUrl": "http://www.kub.com/ullam-consectetur-deleniti-possimus-similique",
+    "phoneNumber": "2348132537277",
+    "balance": 7423
+  },
+  {
+    "id": 12,
+    "name": "Mrs. Elizabeth Keeling",
+    "accountNumber": "5744326612",
+    "bankName": "First Bank",
+    "bvn": "50147768596",
+    "fingerPrint": "50147768596",
+    "imageUrl": "http://kautzer.info/omnis-temporibus-est-consequatur-et-quis-illum",
+    "phoneNumber": "2348148211618",
+    "balance": 8694
+  },
+  {
+    "id": 14,
+    "name": "Royal McLaughlin",
+    "accountNumber": "5321161016",
+    "bankName": "First Bank",
+    "bvn": "50147768596",
+    "fingerPrint": "50147768596",
+    "imageUrl": "http://www.macejkovic.biz/magni-enim-est-et-dolorem.html",
+    "phoneNumber": "2348148211618",
+    "balance": 5159
+  },
+  {
+    "id": 16,
+    "name": "Antonio Kemmer",
+    "accountNumber": "6733116009",
+    "bankName": "Wema Bank",
+    "bvn": "50147768596",
+    "fingerPrint": "50147768596",
+    "imageUrl": "http://www.gibson.biz/modi-voluptas-exercitationem-iste-est-qui",
+    "phoneNumber": "2348132537277",
+    "balance": 4370
+  },
+  {
+    "id": 17,
+    "name": "Tania Feest DDS",
+    "accountNumber": "2354414554",
+    "bankName": "UBA Bank",
+    "bvn": "50147768596",
+    "fingerPrint": "50147768596",
+    "imageUrl": "http://www.kris.biz/",
+    "phoneNumber": "2348132537277",
+    "balance": 3322
+  },
+  {
+    "id": 18,
+    "name": "Prof. Elmo Wisozk DVM",
+    "accountNumber": "4562426469",
+    "bankName": "Polaris Bank",
+    "bvn": "50147768596",
+    "fingerPrint": "50147768596",
+    "imageUrl": "http://wolff.com/",
+    "phoneNumber": "2348132537277",
+    "balance": 5414
+  },
+  {
+    "id": 19,
+    "name": "Colleen Greenholt",
+    "accountNumber": "8538711202",
+    "bankName": "Stanbic Bank",
+    "bvn": "50147768596",
+    "fingerPrint": "50147768596",
+    "imageUrl": "http://www.glover.net/quia-numquam-molestiae-deserunt-facilis-error-ut",
+    "phoneNumber": "2348132537277",
+    "balance": 8370
+  }
+]

@@ -9,11 +9,17 @@
     android:paddingEnd="20dp">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/bankCardView"
         android:layout_width="match_parent"
+        android:id="@+id/bankCardView"
         android:layout_height="100dp"
-        app:cardBackgroundColor="@color/colorStanbic"
         app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:id="@+id/bankLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorStanbic"
+            >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,7 +33,7 @@
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 tools:text="Stanbic Bank"
-                android:textSize="17sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/colorWhite"
                 android:paddingStart="40sp"
@@ -38,7 +44,7 @@
                 />
 
             <ImageView
-                android:id="@+id/amountTextView"
+                android:id="@+id/bankImageView"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="match_parent"
@@ -52,6 +58,7 @@
                 android:gravity="center"
                 />
 
+        </LinearLayout>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

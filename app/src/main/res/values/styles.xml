@@ -9,4 +9,12 @@
         <item name="android:fontFamily">@font/roboto</item>
     </style>
 
+    <style name="MyDialogTheme">
+        <item name="android:datePickerStyle">@style/MyDatePicker</item>
+    </style>
+
+    <style name="MyDatePicker">
+        <item name="android:headerBackground">@color/colorPrimary</item>
+    </style>
+
 </resources>

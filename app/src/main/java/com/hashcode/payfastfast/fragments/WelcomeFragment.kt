@@ -1,6 +1,5 @@
 package com.hashcode.payfastfast.fragments
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -20,5 +19,8 @@ class WelcomeFragment : Fragment() {
         return view
     }
 
+    fun moveFragment(view: View) {
+
+    }
 
 }

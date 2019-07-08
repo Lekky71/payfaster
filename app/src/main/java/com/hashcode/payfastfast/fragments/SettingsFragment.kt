@@ -1,63 +1,43 @@
 package com.hashcode.payfastfast.fragments
 
-import android.content.Context
-import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-
+import android.widget.Toast
+import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import com.google.android.material.textfield.TextInputEditText
 import com.hashcode.payfastfast.R
+import com.hashcode.payfastfast.data.PreferenceManager
 
 
 class SettingsFragment : Fragment() {
-    private var listener: OnFragmentInteractionListener? = null
+    lateinit var nameInputEditText: TextInputEditText
+    lateinit var saveButton: Button
+    lateinit var preferenceManager: PreferenceManager
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_settings, container, false)
+        nameInputEditText = view.findViewById(R.id.nameTextInputEditText)
+        saveButton = view.findViewById(R.id.saveButton)
+        preferenceManager = PreferenceManager(context!!)
+
+        nameInputEditText.setText(preferenceManager.userFullName)
+        saveButton.setOnClickListener {
+            if(nameInputEditText.text!!.length < 5){
+                Toast.makeText(context, "Name must be a minimum of 5 characters", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                val name = nameInputEditText.text.toString()
+                preferenceManager.userFullName = name
+                Toast.makeText(context, "Name Updated!", Toast.LENGTH_SHORT).show()
+                view.findNavController().navigate(R.id.payFragment)
+            }
+        }
 
         return view
-    }
-
-    // TODO: Rename method, update argument and hook method into UI event
-    fun onButtonPressed(uri: Uri) {
-        listener?.onFragmentInteraction(uri)
-    }
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        if (context is OnFragmentInteractionListener) {
-            listener = context
-        } else {
-            throw RuntimeException(context.toString() + " must implement OnStartPaymentListener")
-        }
-    }
-
-    override fun onDetach() {
-        super.onDetach()
-        listener = null
-    }
-
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     *
-     *
-     * See the Android Training lesson [Communicating with Other Fragments]
-     * (http://developer.android.com/training/basics/fragments/communicating.html)
-     * for more information.
-     */
-    interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        fun onFragmentInteraction(uri: Uri)
     }
 
 }

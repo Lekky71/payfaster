@@ -30,6 +30,12 @@ android {
     }
 }
 
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -71,8 +77,17 @@ dependencies {
     implementation "androidx.core:core-ktx:1.2.0-alpha02"
     implementation "androidx.constraintlayout:constraintlayout:1.1.3"
 
+    // consume smart contract
+    implementation ('org.web3j:core:4.2.0-android')
+
     // for pin entry
     implementation 'com.github.OpenCraft:TypeYourPin:ce6b5fe0de'
+
+    implementation(name: 'biometric-release', ext: 'aar')
+
+    // for very fast and efficient file operations
+    implementation 'org.apache.commons:commons-io:1.3.2'
+
 
 }
 

@@ -9,7 +9,9 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
     <color name="colorGreen">#84F59E</color>
+    <color name="colorBlue">#45A9CF</color>
 
+    <color name="colorTransparent">#000000FF</color>
 
     <color name="colorStanbic">#03235A</color>
     <color name="colorWema">#990D81</color>
